@@ -27,6 +27,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         useMaterial3: true
       ),
+      debugShowCheckedModeBanner: false,
       home: const SignupScreen(),
     );
   }

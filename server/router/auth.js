@@ -52,7 +52,7 @@ authRouter.post('/api/signin', async (req, res, next) => {
         res.json({token, ...user._doc});
 
     } catch(e){
-        req.status(500).json({error: e.mesaage })
+        res.status(500).json({error: e.mesaage })
     }
 });
 
